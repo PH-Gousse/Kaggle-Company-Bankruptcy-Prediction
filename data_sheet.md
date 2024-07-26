@@ -26,7 +26,7 @@ As far as you can, complete the model datasheet. If you have got the data from t
 ## Preprocessing/cleaning/labelling
 
 - Preprocessing/Cleaning/Labeling:
-  - The data includes preprocessing steps such as feature extraction and possibly normalization.
+  - The data includes preprocessing steps such as feature extraction and possibly normalisation.
   - Specific details on preprocessing steps are not provided.
 - Raw Data: Information on the availability of raw data is not mentioned.
  
