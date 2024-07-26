@@ -13,8 +13,8 @@ The Neural Network used in this model is a Multi-layer Perceptron (MLP) with the
 - Activation function: ReLU activation function.
 - Learning rate: 0.01.
 - Max iterations: 1000.
-- Regularization (alpha): 0.001.
-- Solver: Adam optimizer for weight optimization.
+- Regularisation (alpha): 0.001.
+- Solver: Adam optimiser for weight optimisation.
 
 Those parameters have been chosen after performing fine-tuning with a random search of 20 iterations on a parameter grid.
 
@@ -54,7 +54,7 @@ The area under the ROC curve (AUC) was 0.98, indicating a high level of discrimi
 ## Limitations
 
 - Data Imbalance: Despite using SMOTE for oversampling the minority class, the real-world data might still be imbalanced. The model may need further fine-tuning to handle imbalanced data effectively.
-- Generalization: The model is trained on data from Taiwan Economic Journal for the years 1999–2009. It may not generalize well to companies from different regions or time periods without additional training and validation.
+- Generalisation: The model is trained on data from Taiwan Economic Journal for the years 1999–2009. It may not generalise well to companies from different regions or time periods without additional training and validation.
 - Feature Dependence: The model relies heavily on the financial metrics provided. Any significant changes in accounting standards or financial reporting practices may affect the model’s performance.
 
 ## Trade-offs
@@ -62,4 +62,4 @@ The area under the ROC curve (AUC) was 0.98, indicating a high level of discrimi
 
 - Complexity vs. Interpretability: While the neural network provides high accuracy and performance, it is less interpretable compared to simpler models like logistic regression or decision trees. Understanding the decision-making process of the neural network can be challenging.
 - Computation Time: Training the neural network, especially with hyperparameter tuning, is computationally intensive and time-consuming compared to simpler models.
-- Overfitting: With a large number of parameters, there is a risk of overfitting the training data. Regularization and cross-validation were used to mitigate this, but there remains a potential trade-off between model complexity and overfitting.
+- Overfitting: With a large number of parameters, there is a risk of overfitting the training data. Regularisation and cross-validation were used to mitigate this, but there remains a potential trade-off between model complexity and overfitting.
