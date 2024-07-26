@@ -1,29 +1,28 @@
-# PROJECT TITLE 
+# Company Bankruptcy Prediction
 
 
-## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
+## Non-technical explanation
 
-This project aims to predict whether companies will go bankrupt based on financial data from the Taiwan Economic Journal, covering the years 1999-2009. Using various machine learning models, we analyze financial indicators to help identify potential bankruptcy risks, which can be crucial for investors, policymakers, and financial institutions.
+This project aims to predict whether companies will go bankrupt based on financial data from the Taiwan Economic Journal, covering the years 1999-2009. Using various machine learning models, we analyse financial indicators to help identify potential bankruptcy risks, which can be crucial for investors, policymakers, and financial institutions.
 
-
-## DATA
+## Data
 
 The dataset comprises financial records of companies from the Taiwan Economic Journal for the years 1999-2009. It includes various financial ratios and metrics that serve as features to predict the likelihood of bankruptcy. The target variable is a binary indicator of bankruptcy status. The data was preprocessed to handle missing values, remove highly correlated features, and balance the class distribution using Synthetic Minority Over-sampling Technique (SMOTE).
 
-## MODEL 
+## Model 
 
 We evaluated three machine learning models: Logistic Regression, Decision Tree, and Neural Network. Each model was trained to identify patterns in the financial data that could indicate a company’s risk of bankruptcy. We chose these models to compare their performance in terms of accuracy, precision, recall, and F1-score.
 
-## HYPERPARAMETER OPTIMSATION
+## Hyperparameter Optimisation
 
-For each model, we optimized hyperparameters to enhance performance.
+For each model, we optimised hyperparameters to enhance performance.
 
-	•	Logistic Regression: We used Grid Search to find the best combination of regularization strength, penalty type, solver, and tolerance.
-	•	Decision Tree: Randomized Search was employed to optimize criteria, maximum depth, minimum samples split, minimum samples leaf, maximum features, and maximum leaf nodes.
-	•	Neural Network: Randomized Search was used to tune the hidden layer sizes, activation functions, learning rates, maximum iterations, alpha (regularization term), and solver.
+- Logistic Regression: We used Grid Search to find the best combination of regularisation strength, penalty type, solver, and tolerance.
+- Decision Tree: Randomised Search was employed to optimise criteria, maximum depth, minimum samples split, minimum samples leaf, maximum features, and maximum leaf nodes.
+- Neural Network: Randomised Search was used to tune the hidden layer sises, activation functions, learning rates, maximum iterations, alpha (regularisation term), and solver.
 
 
-## RESULTS
+## Results
 
 After training and evaluating the models, the Neural Network with tuned hyperparameters emerged as the best performer based on precision and F1-score. It achieved a balanced performance in correctly predicting both bankrupt and non-bankrupt companies. Here are the detailed results:
 
